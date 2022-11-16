@@ -14,7 +14,7 @@ public class ExericesFromFirstLab_01Lesson {
         System.out.println(9);
         System.out.println(10);
 
-        // or we can print the numbers from 1 to 10 with loop!
+        // Or we can print the numbers from 1 to 10 with for loop!
 
         for (int num = 1; num <= 10; num++) {
             System.out.println(num);
