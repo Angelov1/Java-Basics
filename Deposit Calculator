@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class ExericesFromFirstLab_01Lesson {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        int depoz = Integer.parseInt(scanner.nextLine());
+        int termOfDepoz = Integer.parseInt(scanner.nextLine());
+        double yearPercent = Double.parseDouble(scanner.nextLine());
+        
+
+        double formula = (depoz / 100 * yearPercent) / 12;
+        double result = depoz + termOfDepoz * formula;
+
+        System.out.println(result);
+
+    }
+}
