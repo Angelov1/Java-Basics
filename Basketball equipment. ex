@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class ExericesFromFirstLab_01Lesson {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        int yearPrice = Integer.parseInt(scanner.nextLine());
+
+        double basketballShoes = yearPrice - (yearPrice * 40 / 100.0);
+        double basketballSuit = basketballShoes - (basketballShoes * 20 / 100);
+        double basketBall = basketballSuit / 4;
+        double basketballAccessories = basketBall / 5;
+
+        double result = yearPrice + basketballShoes + basketballSuit + basketBall + basketballAccessories;
+
+        System.out.printf("%f", result);
+
+    }
+}
