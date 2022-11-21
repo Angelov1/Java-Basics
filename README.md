@@ -1,2 +1,2 @@
 # Java-Basics
-Here is my java basic projects.
+Here are my done java basic exercises.
