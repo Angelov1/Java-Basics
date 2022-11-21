@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ExericesFromFirstLab_01Lesson {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int nylon = Integer.parseInt(scanner.nextLine()) + 2;
+        int paint = Integer.parseInt(scanner.nextLine());
+        int diluent = Integer.parseInt(scanner.nextLine());
+        int workHours = Integer.parseInt(scanner.nextLine());
+
+        double nylonPrice = nylon * 1.50;
+        double paintPrice = paint * 14.50;
+        double diluentPrice = diluent * 5.00;
+
+        double fullPaintPrice = paintPrice + (paintPrice * 10 / 100);
+        double bag = 0.40;
+
+        double materialsPrice = nylonPrice + fullPaintPrice + diluentPrice +
+                bag;
+
+        double workersPriceForHour = (materialsPrice * 30 / 100) * workHours;
+        double result = materialsPrice + workersPriceForHour;
+
+        System.out.printf("%.2f", result);
+        
+    }
+}
