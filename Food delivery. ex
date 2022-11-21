@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class ExericesFromFirstLab_01Lesson {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int chickenMenu = Integer.parseInt(scanner.nextLine());
+        int fishMenu = Integer.parseInt(scanner.nextLine());
+        int veganMenu = Integer.parseInt(scanner.nextLine());
+
+        double priceForChickenMenu = chickenMenu * 10.35;
+        double priceForFishMenu = fishMenu * 12.40;
+        double priceForVeganMenu = veganMenu * 8.15;
+
+        double fullPrice = priceForChickenMenu + priceForFishMenu + priceForVeganMenu;
+
+        double desertPrice = fullPrice - (fullPrice * 80 / 100);
+        double takeawayPrice = 2.50;
+
+        double deliveryPrice = fullPrice + desertPrice + takeawayPrice;
+
+        System.out.printf("%.2f", deliveryPrice);
+
+
+
+    }
+}
