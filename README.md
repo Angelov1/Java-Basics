@@ -1,6 +1,6 @@
 
 # SoftUni-Java-Basics
-Here are my all done projects and tasks from courses of SoftUni: Programming Basics with Java.
+Here are my all done projects and exercises from courses of SoftUni: Programming Basics with Java.
 
 The language i have used to create these projects is Java.
 
