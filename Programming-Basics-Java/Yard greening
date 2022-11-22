@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class ExericesFromFirstLab_01Lesson {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+       int yardMeters = Integer.parseInt(scanner.nextLine());
+       double priceforMeter = yardMeters * 7.61;
+       double discount = priceforMeter * 0.18;
+       double fullPriceofServive = priceforMeter - discount;
+
+        System.out.printf("The final price is: %.2f lv.", fullPriceofServive);
+        System.out.printf(" The discount is: %.2f lv.", discount);
+    }
+}
