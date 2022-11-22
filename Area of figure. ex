@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class ExcellentJavaClassTwo {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String figure = (scanner.nextLine());
+
+        if (figure.equals("square")) {
+            double squareLength = Double.parseDouble(scanner.nextLine());
+            double result = squareLength * squareLength;
+            System.out.printf("%.3f", result);
+        } else if (figure.equals("rectangle")) {
+            double width = Double.parseDouble(scanner.nextLine());
+            double height = Double.parseDouble(scanner.nextLine());
+            double result = width * height;
+            System.out.printf("%.3f", result);
+        } else if (figure.equals("circle")) {
+            double radius = Double.parseDouble(scanner.nextLine());
+            double result = Math.PI * radius * radius;
+            System.out.printf("%.3f", result);
+        } else if (figure.equals("triangle")) {
+            double length = Double.parseDouble(scanner.nextLine());
+            double height = Double.parseDouble(scanner.nextLine());
+            double result = length * height / 2;
+            System.out.printf("%.3f", result);
+
+        }
+        }
+    }
