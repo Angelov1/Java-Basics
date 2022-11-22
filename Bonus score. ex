@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ExericesFromFirstLab_01Lesson {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int firstScores = Integer.parseInt(scanner.nextLine());
+
+        double bonusScores = 0;
+        if (firstScores <= 100) {
+            bonusScores = bonusScores + 5;
+        } else if (firstScores > 1000) {
+            bonusScores = firstScores * 0.1;
+        } else {
+            bonusScores = firstScores * 0.2;
+        }
+
+        if (firstScores % 2 == 0) {
+            bonusScores = bonusScores + 1;
+        } else if (firstScores % 10 == 5) {
+            bonusScores = bonusScores + 2;
+        }
+
+        double allScore = firstScores + bonusScores;
+
+        System.out.println(bonusScores);
+        System.out.println(firstScores + bonusScores);
+        }
+    }
