@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ExericesFromFirstLab_01Lesson {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double budget = Double.parseDouble(scanner.nextLine());
+        int videoCards = Integer.parseInt(scanner.nextLine());
+        int processors = Integer.parseInt(scanner.nextLine());
+        int rams = Integer.parseInt(scanner.nextLine());
+
+        double priceVideoCards = videoCards * 250;
+        double priceProcessors = processors * (priceVideoCards * 35 / 100);
+        double priceRams = rams * (priceVideoCards * 10 / 100);
+
+        double price = priceVideoCards + priceProcessors + priceRams;
+
+        if (videoCards > processors) {
+            price = price - (price * 15 / 100);
+        }
+
+        if (budget > price) {
+            System.out.printf("You have %.2f leva left!", budget - price);
+        } else {
+            System.out.printf("Not enough money! You need %.2f leva more!", price - budget);
+        }
+
+    }
+}
