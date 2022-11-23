@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class ExericesFromFirstLab_01Lesson {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double seconds = Double.parseDouble(scanner.nextLine());
+        double meters = Double.parseDouble(scanner.nextLine());
+        double timeOneMeterSwimming = Double.parseDouble(scanner.nextLine());
+        
+        double fifteenMetersTimeAdd = Math.floor(meters / 15) * 12.5;
+
+        double allTime = meters * timeOneMeterSwimming + fifteenMetersTimeAdd;
+
+        if (seconds < allTime) {
+            System.out.printf("No, he failed! He was %.2f seconds slower.", allTime - seconds);
+        } else if (seconds > allTime) {
+            System.out.printf("Yes, he succeeded! The new world record is %.2f seconds.", allTime);
+        }
+        }
+        }
+
