@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class ExericesFromFirstLab_01Lesson {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+       double priceExcursion = Double.parseDouble(scanner.nextLine());
+        int numberPuzzle = Integer.parseInt(scanner.nextLine());
+        int numberTalkDolls = Integer.parseInt(scanner.nextLine());
+        int numberTediBears = Integer.parseInt(scanner.nextLine());
+        int numberMinions = Integer.parseInt(scanner.nextLine());
+        int numberTrucks = Integer.parseInt(scanner.nextLine());
+
+        double pricePuzzles = numberPuzzle * 2.6;
+        double priceDolls = numberTalkDolls * 3.0;
+        double priceBears = numberTediBears * 4.1;
+        double priceMinions = numberMinions * 8.2;
+        double priceTrucks = numberTrucks * 2.0;
+
+        double allPrice = pricePuzzles + priceDolls + priceBears + priceMinions + priceTrucks;
+        double allNumberToys = numberPuzzle + numberTalkDolls + numberTediBears + numberMinions + numberTrucks;
+
+        double allPriceTwo = 0;
+        if (allNumberToys > 50) {
+            allPriceTwo = allPrice * 0.25;
+        }
+
+        double endPrice = allPrice - allPriceTwo;
+        double rental = endPrice * 0.10;
+        double personalMoney = endPrice - rental;
+
+        double leftMoney = personalMoney - priceExcursion;
+        double neededMoney = priceExcursion - personalMoney;
+
+        if (personalMoney > priceExcursion) {
+            System.out.printf("Yes! %.2f lv left.", leftMoney);
+        } else {
+            System.out.printf("Not enough money! %.2f lv needed.", neededMoney);
+        }
+        }
+        }
