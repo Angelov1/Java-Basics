@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class KingKongEx {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double budget = Double.parseDouble(scanner.nextLine());
+        int statist = Integer.parseInt(scanner.nextLine());
+        double priceClothingForOneStatist = Double.parseDouble(scanner.nextLine());
+
+        double decor = budget * 10 / 100;
+
+        double priceAllClothings = priceClothingForOneStatist * statist;
+
+        if (statist > 150) {
+            priceAllClothings = priceAllClothings - priceAllClothings * 10 / 100;
+        }
+
+        priceAllClothings += decor;
+
+        if (priceAllClothings > budget) {
+            System.out.printf("Not enough money!%nWingard needs &.2f leva more.", priceAllClothings - budget);
+        } else {
+            System.out.printf("Action!%nWingard starts filming with %.2f leva left.", budget - priceAllClothings);
+        }
+    }
+}
