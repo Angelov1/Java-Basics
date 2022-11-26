@@ -17,7 +17,7 @@ ________________________________________________________________________________
 
 (Projects link ->) https://github.com/Angelov1/SoftUni-Java-Basics
 
-(Other good project (game) ->) https://github.com/Angelov1/Rock-Paper-Scissors-Game
+(Another project ->) https://github.com/Angelov1/Rock-Paper-Scissors-Game
 ______________________________________________________________________________________
 
 Screenshots:
