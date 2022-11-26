@@ -1,0 +1,110 @@
+import java.util.Scanner;
+
+public class Exercises {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String product = (scanner.nextLine());
+        String city = (scanner.nextLine());
+        double amount = Double.parseDouble(scanner.nextLine());
+
+        double coffee = 0;
+        double water = 0;
+        double beer = 0;
+        double sweets = 0;
+        double peanuts = 0;
+
+        if (product.equals("coffee")) {
+            if (city.equals("Sofia")) {
+                coffee = 0.50;
+                System.out.println(coffee * amount);
+            }
+        }
+        if (product.equals("water")) {
+            if (city.equals("Sofia")) {
+                water = 0.80;
+                System.out.println(water * amount);
+            }
+        }
+        if (product.equals("beer")) {
+            if (city.equals("Sofia")) {
+                beer = 1.20;
+                System.out.println(beer * amount);
+            }
+        }
+        if (product.equals("sweets")) {
+            if (city.equals("Sofia")) {
+                sweets = 1.45;
+                System.out.println(sweets * amount);
+            }
+        }
+        if (product.equals("peanuts")) {
+            if (city.equals("Sofia")) {
+                peanuts = 1.60;
+                System.out.println(peanuts * amount);
+            }
+        }
+        if (product.equals("coffee")) {
+            if (city.equals("Plovdiv")) {
+                coffee = 0.40;
+                System.out.println(coffee * amount);
+            }
+        }
+        if (product.equals("water")) {
+            if (city.equals("Plovdiv")) {
+                water = 0.70;
+                System.out.println(water * amount);
+            }
+        }
+        if (product.equals("beer")) {
+            if (city.equals("Plovdiv")) {
+                beer = 1.15;
+                System.out.println(beer * amount);
+            }
+        }
+        if (product.equals("sweets")) {
+            if (city.equals("Plovdiv")) {
+                sweets = 1.30;
+                System.out.println(sweets * amount);
+            }
+        }
+        if (product.equals("peanuts")) {
+            if (city.equals("Plovdiv")) {
+                peanuts = 1.50;
+                System.out.println(peanuts * amount);
+            }
+        }
+        if (product.equals("coffee")) {
+            if (city.equals("Varna")) {
+                coffee = 0.45;
+                System.out.println(coffee * amount);
+            }
+        }
+        if (product.equals("water")) {
+            if (city.equals("Varna")) {
+                water = 0.70;
+                System.out.println(water * amount);
+            }
+        }
+        if (product.equals("beer")) {
+            if (city.equals("Varna")) {
+                beer = 1.10;
+                System.out.println(beer * amount);
+            }
+        }
+        if (product.equals("sweets")) {
+            if (city.equals("Varna")) {
+                sweets = 1.35;
+                System.out.println(sweets * amount);
+            }
+        }
+        if (product.equals("peanuts")) {
+            if (city.equals("Varna")) {
+                peanuts = 1.55;
+                System.out.println(peanuts * amount);
+            }
+
+        }
+    }
+}
+
