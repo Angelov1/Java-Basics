@@ -15,7 +15,7 @@ ________________________________________________________________________________
 
 ______________________________________________________________________________________
 
-( Projects link ->) https://github.com/Angelov1/SoftUni-Java-Basics
+(Projects link ->) https://github.com/Angelov1/SoftUni-Java-Basics
 
 (Another project ->) https://github.com/Angelov1/Rock-Paper-Scissors-Game
 ______________________________________________________________________________________
