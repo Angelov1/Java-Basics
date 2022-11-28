@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Exercises {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String nameOfProduct = (scanner.nextLine());
+
+        if (nameOfProduct.equals("banana")) {
+            System.out.println("fruit");
+        } else if (nameOfProduct.equals("apple")) {
+            System.out.println("fruit");
+        } else if (nameOfProduct.equals("kiwi")) {
+            System.out.println("fruit");
+        } else if (nameOfProduct.equals("cherry")) {
+            System.out.println("fruit");
+        } else if (nameOfProduct.equals("lemon")) {
+            System.out.println("fruit");
+        } else if (nameOfProduct.equals("grapes")) {
+            System.out.println("fruit");
+        } else if (nameOfProduct.equals("tomato")) {
+            System.out.println("vegetable");
+        } else if (nameOfProduct.equals("cucumber")) {
+            System.out.println("vegetable");
+        } else if (nameOfProduct.equals("pepper")) {
+            System.out.println("vegetable");
+        } else if (nameOfProduct.equals("carrot")) {
+            System.out.println("vegetable");
+        } else {
+            System.out.println("unknown");
+        }
+
+
+
+
+        }
+
+    }
