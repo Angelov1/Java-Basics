@@ -1,0 +1,134 @@
+import java.util.Scanner;
+
+public class Exercises {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String friut = (scanner.nextLine());
+        String dayOfWeek = (scanner.nextLine());
+        double amount = Double.parseDouble(scanner.nextLine());
+
+        double banana = 0.00;
+        double apple = 0.00;
+        double orange = 0.00;
+        double grapefruit = 0.00;
+        double kiwi = 0.00;
+        double pineapple = 0.00;
+        double grapes = 0.00;
+
+        if (friut.equals("banana")) {
+            if (dayOfWeek.equalsIgnoreCase("Monday") ||
+                    dayOfWeek.equalsIgnoreCase("Tuesday") ||
+                    dayOfWeek.equalsIgnoreCase("Wednesday") ||
+                    dayOfWeek.equalsIgnoreCase("Thursday") ||
+                    dayOfWeek.equalsIgnoreCase("Friday")) {
+                banana = 2.50;
+                System.out.printf("%.2f", banana * amount);
+            }
+        } else if (friut.equals("apple")) {
+            if (dayOfWeek.equalsIgnoreCase("Monday") ||
+                    dayOfWeek.equalsIgnoreCase("Tuesday") ||
+                    dayOfWeek.equalsIgnoreCase("Wednesday") ||
+                    dayOfWeek.equalsIgnoreCase("Thursday") ||
+                    dayOfWeek.equalsIgnoreCase("Friday")) {
+                apple = 1.20;
+                System.out.printf("%.2f", apple * amount);
+            }
+        } else if (friut.equals("orange")) {
+            if (dayOfWeek.equalsIgnoreCase("Monday") ||
+                    dayOfWeek.equalsIgnoreCase("Tuesday") ||
+                    dayOfWeek.equalsIgnoreCase("Wednesday") ||
+                    dayOfWeek.equalsIgnoreCase("Thursday") ||
+                    dayOfWeek.equalsIgnoreCase("Friday")) {
+                orange = 0.85;
+                System.out.printf("%.2f", orange * amount);
+            }
+        } else if (friut.equals("grapefruit")) {
+            if (dayOfWeek.equalsIgnoreCase("Monday") ||
+                    dayOfWeek.equalsIgnoreCase("Tuesday") ||
+                    dayOfWeek.equalsIgnoreCase("Wednesday") ||
+                    dayOfWeek.equalsIgnoreCase("Thursday") ||
+                    dayOfWeek.equalsIgnoreCase("Friday")) {
+                grapefruit = 1.45;
+                System.out.printf("%.2f", grapefruit * amount);
+            }
+        } else if (friut.equals("kiwi")) {
+            if (dayOfWeek.equalsIgnoreCase("Monday") ||
+                    dayOfWeek.equalsIgnoreCase("Tuesday") ||
+                    dayOfWeek.equalsIgnoreCase("Wednesday") ||
+                    dayOfWeek.equalsIgnoreCase("Thursday") ||
+                    dayOfWeek.equalsIgnoreCase("Friday")) {
+                kiwi = 2.70;
+                System.out.printf("%.2f", kiwi * amount);
+            }
+        } else if (friut.equals("pineapple")) {
+            if (dayOfWeek.equalsIgnoreCase("Monday") ||
+                    dayOfWeek.equalsIgnoreCase("Tuesday") ||
+                    dayOfWeek.equalsIgnoreCase("Wednesday") ||
+                    dayOfWeek.equalsIgnoreCase("Thursday") ||
+                    dayOfWeek.equalsIgnoreCase("Friday")) {
+                pineapple = 5.50;
+                System.out.printf("%.2f", pineapple * amount);
+            }
+        } else if (friut.equals("grapes")) {
+            if (dayOfWeek.equalsIgnoreCase("Monday") ||
+                    dayOfWeek.equalsIgnoreCase("Tuesday") ||
+                    dayOfWeek.equalsIgnoreCase("Wednesday") ||
+                    dayOfWeek.equalsIgnoreCase("Thursday") ||
+                    dayOfWeek.equalsIgnoreCase("Friday")) {
+                grapes = 3.85;
+                System.out.printf("%.2f", grapes * amount);
+            }
+        }
+
+        if (friut.equals("banana")) {
+            if (dayOfWeek.equalsIgnoreCase("Saturday") ||
+                    dayOfWeek.equalsIgnoreCase("Sunday")) {
+                banana = 2.70;
+                System.out.printf("%.2f", banana * amount);
+            }
+        } else if (friut.equals("apple")) {
+            if (dayOfWeek.equalsIgnoreCase("Saturday") ||
+                    dayOfWeek.equalsIgnoreCase("Sunday")) {
+                apple = 1.25;
+                System.out.printf("%.2f", apple * amount);
+            }
+        } else if (friut.equals("orange")) {
+            if (dayOfWeek.equalsIgnoreCase("Saturday") ||
+                    dayOfWeek.equalsIgnoreCase("Sunday")) {
+                orange = 0.90;
+                System.out.printf("%.2f", orange * amount);
+            }
+        } else if (friut.equals("grapefruit")) {
+            if (dayOfWeek.equalsIgnoreCase("Saturday") ||
+                    dayOfWeek.equalsIgnoreCase("Sunday")) {
+                grapefruit = 1.60;
+                System.out.printf("%.2f", grapefruit * amount);
+            }
+        } else if (friut.equals("kiwi")) {
+            if (dayOfWeek.equalsIgnoreCase("Saturday") ||
+                    dayOfWeek.equalsIgnoreCase("Sunday")) {
+                 kiwi = 3.00;
+                System.out.printf("%.2f", kiwi * amount);
+            }
+        } else if (friut.equals("pineapple")) {
+            if (dayOfWeek.equalsIgnoreCase("Saturday") ||
+                    dayOfWeek.equalsIgnoreCase("Sunday")) {
+                pineapple = 5.60;
+                System.out.printf("%.2f", pineapple * amount);
+            }
+        } else if (friut.equals("grapes")) {
+            if (dayOfWeek.equalsIgnoreCase("Saturday") ||
+                    dayOfWeek.equalsIgnoreCase("Sunday")) {
+                grapes = 4.20;
+                System.out.printf("%.2f", grapes * amount);
+            }
+        } else {
+            System.out.println("error");
+        }
+
+        if (dayOfWeek.equals("Workday")) {
+            System.out.printf("error");
+        }
+        }
+    }
