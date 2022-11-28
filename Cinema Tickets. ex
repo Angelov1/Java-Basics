@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Exercises {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String dayOfWeek = (scanner.nextLine());
+
+        if (dayOfWeek.equals("Monday")) {
+            System.out.println(12);
+        }
+        if (dayOfWeek.equals("Tuesday")) {
+            System.out.println(12);
+        }
+        if (dayOfWeek.equals("Wednesday")) {
+            System.out.println(14);
+        }
+        if (dayOfWeek.equals("Thursday")) {
+            System.out.println(14);
+        }
+        if (dayOfWeek.equals("Friday")) {
+            System.out.println(12);
+        }
+        if (dayOfWeek.equals("Saturday")) {
+            System.out.println(16);
+        }
+        if (dayOfWeek.equals("Sunday")) {
+            System.out.println(16);
+        }
+
+
+        }
+
+    }
