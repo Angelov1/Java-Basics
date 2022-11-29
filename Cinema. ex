@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Exercises {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String typeProject = (scanner.nextLine());
+        int rows = Integer.parseInt(scanner.nextLine());
+        int columns = Integer.parseInt(scanner.nextLine());
+
+        double premiere = 0;
+        double normal = 0;
+        double discount = 0;
+        if (typeProject.equals("Premiere")) {
+            premiere = 12.00;
+            double resultPremiere = premiere * rows * columns;
+            System.out.printf("%.2f", resultPremiere);
+            System.out.println();
+            System.out.println(" leva");
+        }
+        if (typeProject.equals("Normal")) {
+            normal = 7.50;
+            double resultNormal = normal * rows * columns;
+            System.out.printf("%.2f", resultNormal);
+            System.out.println();
+            System.out.println(" leva");
+        }
+        if (typeProject.equals("Discount")) {
+            discount = 5.00;
+            double resultDiscount = discount * rows * columns;
+            System.out.printf("%.2f", resultDiscount); System.out.println(" leva");
+        }
+        
+        }
+        }
+
+
+
+
+
+
