@@ -22,7 +22,7 @@ public class ExericesFromFirstLab_01Lesson {
             output = "Early";
         } else {
             output = "Late";
-                 
+                
         }
 
         System.out.println(output);
