@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Exercises {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double budget = Double.parseDouble(scanner.nextLine());
+        String season = (scanner.nextLine());
+
+        String campOrHotel = "";
+        String distance = "";
+
+        if (budget <= 100) {
+            if (season.equals("summer")) {
+                budget *= 0.30;
+                distance = "Bulgaria";
+                campOrHotel = "Camp";
+            } else if (season.equals("winter")) {
+                budget *= 0.70;
+                distance = "Bulgaria";
+                campOrHotel = "Hotel";
+            }
+
+        } else if (budget <= 1000) {
+            if (season.equals("summer")) {
+                budget *= 0.40;
+                distance = "Balkans";
+                campOrHotel = "Camp";
+            } else if (season.equals("winter")) {
+                budget *= 0.80;
+                distance = "Balkans";
+                campOrHotel = "Hotel";
+            }
+        } else {
+            budget *= 0.90;
+            distance = "Europe";
+            campOrHotel = "Hotel";
+        }
+
+        System.out.printf("Somewhere in %s%n", distance);
+        System.out.printf("%s - %.2f", campOrHotel, budget);
+
+        }
+    }
