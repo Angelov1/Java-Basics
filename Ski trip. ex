@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class ExericesFromFirstLab_01Lesson {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int daysStaying = Integer.parseInt(scanner.nextLine()) - 1 ;
+        String typeRoom = (scanner.nextLine());
+        String score = (scanner.nextLine());
+
+        double roomOnePersonPrice = 18.00;
+        double apartmentPrice = 25.00;
+        double presidentApartment = 35.00;
+
+        double roomOnePersonResult = roomOnePersonPrice * daysStaying;
+        double apartmentResult = apartmentPrice * daysStaying;
+        double presidentApartmentResult = presidentApartment * daysStaying;
+
+        if (daysStaying < 10 && typeRoom.equals("apartment")) {
+            apartmentResult = apartmentResult - (apartmentResult * 0.30);
+        } else if (daysStaying <= 15 && typeRoom.equals("apartment")) {
+            apartmentResult = apartmentResult - (apartmentResult * 0.35);
+        } else if (daysStaying > 15 && typeRoom.equals("apartment")) {
+            apartmentResult = apartmentResult - (apartmentResult * 0.50);
+        }
+        if (daysStaying < 10 && typeRoom.equals("president apartment")) {
+            presidentApartmentResult = presidentApartmentResult - (presidentApartmentResult * 0.10);
+        } else if (daysStaying <= 15 && typeRoom.equals("president apartment")) {
+            presidentApartmentResult = presidentApartmentResult - (presidentApartmentResult * 0.15);
+        } else if (daysStaying > 15 && typeRoom.equals("president apartment")) {
+            presidentApartmentResult = presidentApartmentResult - (presidentApartmentResult * 0.20);
+        }
+
+        if (score.equals("positive")) {
+            roomOnePersonResult = roomOnePersonResult + (roomOnePersonResult * 0.25);
+            apartmentResult = apartmentResult + (apartmentResult * 0.25);
+            presidentApartmentResult = presidentApartmentResult + (presidentApartmentResult * 0.25);
+        } else {
+            roomOnePersonResult = roomOnePersonResult - (roomOnePersonResult * 0.10);
+            apartmentResult = apartmentResult - (apartmentResult * 0.10);
+            presidentApartmentResult = presidentApartmentResult - (presidentApartmentResult * 0.10);
+        }
+
+        if (typeRoom.equals("room for one person")) {
+            System.out.printf("%.2f", roomOnePersonResult);
+        }
+        if (typeRoom.equals("apartment")) {
+            System.out.printf("%.2f", apartmentResult);
+        }
+        if (typeRoom.equals("president apartment")) {
+            System.out.printf("%.2f", presidentApartmentResult);
+        }
+
+        }
+    }
+
+
