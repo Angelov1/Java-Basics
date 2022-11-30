@@ -1,0 +1,79 @@
+import java.io.PrintStream;
+import java.util.Scanner;
+
+public class Exercises {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+       int budget = Integer.parseInt(scanner.nextLine());
+       String season = (scanner.nextLine());
+       int fishers = Integer.parseInt(scanner.nextLine());
+
+       int shipPrice = 0;
+
+       switch (season) {
+           case "Spring":
+               shipPrice = 3000;
+
+               if (fishers <= 6) {
+                   shipPrice = shipPrice - (shipPrice * 10) / 100;
+               } else if (fishers <= 11) {
+                   shipPrice = shipPrice - (shipPrice * 15) / 100;
+               } else if (fishers >= 12) {
+                   shipPrice = shipPrice - (shipPrice * 25) / 100;
+               }
+
+               if (fishers % 2 == 0) {
+                   shipPrice = shipPrice - (shipPrice * 5) / 100;
+               }
+               break;
+           case "Summer":
+               shipPrice = 4200;
+               if (fishers <= 6) {
+                   shipPrice = shipPrice - (shipPrice * 10) / 100;
+               } else if (fishers <= 11) {
+                   shipPrice = shipPrice - (shipPrice * 15) / 100;
+               } else if (fishers >= 12) {
+                   shipPrice = shipPrice - (shipPrice * 25) / 100;
+               }
+
+               if (fishers % 2 == 0) {
+                   shipPrice = shipPrice - (shipPrice * 5) / 100;
+               }
+               break;
+           case "Autumn":
+               shipPrice = 4200;
+
+               if (fishers <= 6) {
+                   shipPrice = shipPrice - (shipPrice * 10) / 100;
+               } else if (fishers <= 11) {
+                   shipPrice = shipPrice - (shipPrice * 15) / 100;
+               } else if (fishers >= 12) {
+                   shipPrice = shipPrice - (shipPrice * 25) / 100;
+               }
+               break;
+           case "Winter":
+               shipPrice = 2600;
+
+               if (fishers <= 6) {
+                   shipPrice = shipPrice - (shipPrice * 10) / 100;
+               } else if (fishers <= 11) {
+                   shipPrice = shipPrice - (shipPrice * 15) / 100;
+               } else if (fishers >= 12) {
+                   shipPrice = shipPrice - (shipPrice * 25) / 100;
+               }
+
+               if (fishers % 2 == 0) {
+                   shipPrice = shipPrice - (shipPrice * 5) / 100;
+               }
+               break;
+       }
+
+       if (budget >= shipPrice) {
+           System.out.printf("Yes! You have %.2f leva left.", Math.abs(budget - shipPrice + 0.0));
+       } else {
+           System.out.printf("Not enough money! You need %.2f leva.", Math.abs(shipPrice - budget + 0.0));
+       }
+
+        }
+    }
