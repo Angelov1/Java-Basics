@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class Exercises {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int degrees = Integer.parseInt(scanner.nextLine());
+        String dayTime = (scanner.nextLine());
+
+
+        String outfit = "";
+        String shoes = "";
+
+        if (10 <= degrees && degrees <= 18 && dayTime.equals("Morning")) {
+                outfit = "Sweatshirt";
+                shoes = "Sneakers";
+                System.out.printf("It's %d degrees, get your %s and %s.", degrees, outfit, shoes);
+            } else if (10 <= degrees && degrees <= 18 && dayTime.equals("Afternoon")) {
+                    outfit = "Shirt";
+                    shoes = "Moccasins";
+                    System.out.printf("It's %d degrees, get your %s and %s.", degrees, outfit, shoes);
+                } else if (10 <= degrees && degrees <= 18 && dayTime.equals("Evening")) {
+                    outfit = "Shirt";
+                    shoes = "Moccasins";
+                    System.out.printf("It's %d degrees, get your %s and %s.", degrees, outfit, shoes);
+                }
+
+        if (18 <= degrees && degrees <= 24 && dayTime.equals("Morning")) {
+                outfit = "Shirt";
+                shoes = "Moccasins";
+                System.out.printf("It's %d degrees, get your %s and %s.", degrees, outfit, shoes);
+            } else if (18 <= degrees && degrees <= 24 && dayTime.equals("Afternoon")) {
+                outfit = "T-Shirt";
+                shoes = "Sandals";
+                System.out.printf("It's %d degrees, get your %s and %s.", degrees, outfit, shoes);
+            } else if (18 <= degrees && degrees <= 24 && dayTime.equals("Evening")) {
+                outfit = "Shirt";
+                shoes = "Moccasins";
+                System.out.printf("It's %d degrees, get your %s and %s.", degrees, outfit, shoes);
+            }
+        if (degrees >= 25 && dayTime.equals("Morning")) {
+                outfit = "T-Shirt";
+                shoes = "Sandals";
+                System.out.printf("It's %d degrees, get your %s and %s.", degrees, outfit, shoes);
+            } else if (degrees >= 25 && dayTime.equals("Afternoon")) {
+                outfit = "Swim Suit";
+                shoes = "Barefoot";
+                System.out.printf("It's %d degrees, get your %s and %s.", degrees, outfit, shoes);
+            } else if (degrees >= 25 && dayTime.equals("Evening")) {
+                outfit = "Shirt";
+                shoes = "Moccasins";
+                System.out.printf("It's %d degrees, get your %s and %s.", degrees, outfit, shoes);
+            }
+        }
+    }
+
+
+
+
+
+
