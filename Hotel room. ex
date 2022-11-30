@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class ExericesFromFirstLab_01Lesson {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String month = (scanner.nextLine());
+        int numberNights = Integer.parseInt(scanner.nextLine());
+
+        double studioPrice = 0.0;
+        double apartemntPrice = 0.0;
+        double apartamentResult = 0.0;
+        double studioResult = 0.0;
+        if (month.equals("May") || month.equals("October")) {
+            studioPrice = 50.00;
+            apartemntPrice = 65.00;
+
+            if (numberNights >= 14 && month.equals("May") || month.equals("October")) {
+                studioPrice = studioPrice - studioPrice * 0.30;
+            } else if (numberNights >= 7 && month.equals("May") || month.equals("October")) {
+                studioPrice = studioPrice - studioPrice * 0.5;
+            }
+            if (numberNights > 14) {
+                apartemntPrice = apartemntPrice - apartemntPrice * 0.10;
+            }
+            studioResult = studioPrice * numberNights;
+            apartamentResult = apartemntPrice * numberNights;
+        } else if (month.equals("June") || month.equals("September")) {
+            studioPrice = 75.20;
+            apartemntPrice = 68.70;
+
+            if (numberNights > 14 && month.equals("June") || month.equals("September")) {
+                studioPrice = studioPrice - studioPrice * 0.20;
+            }
+            if (numberNights > 14) {
+                apartemntPrice = apartemntPrice - apartemntPrice * 0.10;
+            }
+            studioResult = studioPrice * numberNights;
+            apartamentResult = apartemntPrice * numberNights;
+        } else if (month.equals("July") || month.equals("August")) {
+            studioPrice = 76.00;
+            apartemntPrice = 77.00;
+
+            if (numberNights > 14) {
+                apartemntPrice = apartemntPrice - apartemntPrice * 0.10;
+            }
+            studioResult = studioPrice * numberNights;
+            apartamentResult = apartemntPrice * numberNights;
+        }
+
+        System.out.printf("Apartment: %.2f lv.%n", apartamentResult);
+        System.out.printf("Studio: %.2f lv.", studioResult);
+        }
+    }
+
+
+
