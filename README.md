@@ -1,6 +1,3 @@
-a
-bfss
-c
 # SoftUni-Java-Basics
 Here are my all done projects and assignments from course of SoftUni: Programming basics with Java.
 
@@ -34,15 +31,6 @@ ________________________________________________________________________________
 ![image](https://user-images.githubusercontent.com/117378467/204111493-386b911f-ce2b-4c81-8e10-7ebc8fbb92f4.png)
 
 ______________________________________________________________________________________
-
-
-
-
-
-
-
-
-
 
 
 
