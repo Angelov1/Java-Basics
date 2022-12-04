@@ -1,6 +1,6 @@
 # SoftUni-Java-Basics
 Here are my all done projects and assignments from course of SoftUni: Programming basics with Java.
-
+a
 ![image](https://user-images.githubusercontent.com/117378467/203246326-9c6d477c-ab80-4a4d-bcf6-803deba416df.png) 
 
 
